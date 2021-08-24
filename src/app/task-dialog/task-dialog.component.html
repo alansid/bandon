@@ -1,0 +1,16 @@
+<mat-form-field>
+  <mat-label>名字</mat-label>
+  <input matInput cdkFocusInitial [(ngModel)]="data.periodicElement.name" />
+</mat-form-field>
+<mat-form-field>
+  <mat-label>訂單內容</mat-label>
+  <input matInput cdkFocusInitial [(ngModel)]="data.periodicElement.content" />
+</mat-form-field>
+
+
+
+
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="{ periodicElement: data.periodicElement }">OK</button>
+  <button mat-button (click)="cancel()">Cancel</button>
+</div>
